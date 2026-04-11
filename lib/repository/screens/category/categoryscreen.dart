@@ -38,10 +38,10 @@ class CategoryScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      resizeToAvoidBottomInset: true,
-      body: Column(
+      //resizeToAvoidBottomInset: true,
+      body: ListView(
         children: [
-          SizedBox(height: 40),
+          SizedBox(height: 20),
           Stack(
             children: [
               Container(
@@ -129,8 +129,8 @@ class CategoryScreen extends StatelessWidget {
             ],
           ),
           SizedBox(height: 10),
-          Expanded(
-            flex: 5,
+          SizedBox(
+            height: 120,
             child: Padding(
               padding: const EdgeInsets.only(left: 20),
               child: ListView.builder(
@@ -166,8 +166,8 @@ class CategoryScreen extends StatelessWidget {
             ),
           ),
           //Secondary Grocerry
-          Expanded(
-            flex: 5,
+          SizedBox(
+            height: 120,
             child: Padding(
               padding: const EdgeInsets.only(left: 20),
               child: ListView.builder(
@@ -215,8 +215,8 @@ class CategoryScreen extends StatelessWidget {
             ],
           ),
 
-          Expanded(
-            flex: 5,
+          SizedBox(
+            height: 120,
             child: Padding(
               padding: const EdgeInsets.only(left: 20),
               child: ListView.builder(
@@ -263,8 +263,8 @@ class CategoryScreen extends StatelessWidget {
               ),
             ],
           ),
-          Expanded(
-            flex: 4,
+          SizedBox(
+            height: 120,
             child: Padding(
               padding: const EdgeInsets.only(left: 20),
               child: ListView.builder(
