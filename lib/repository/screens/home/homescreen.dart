@@ -29,11 +29,9 @@ class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      resizeToAvoidBottomInset: true,
-
-      body: Column(
+      body: ListView(
         children: [
-          SizedBox(height: 40),
+          SizedBox(height: 20),
           Stack(
             children: [
               Container(
@@ -133,7 +131,8 @@ class HomeScreen extends StatelessWidget {
                   ],
                 ),
 
-                Expanded(
+                SizedBox(
+                  height: 140,
                   child: Padding(
                     padding: const EdgeInsets.all(10.0),
                     child: ListView.builder(
@@ -382,8 +381,9 @@ class HomeScreen extends StatelessWidget {
             ],
           ),
           SizedBox(height: 10),
-          Expanded(
-            flex: 5,
+          SizedBox(
+            height: 120,
+
             child: Padding(
               padding: const EdgeInsets.only(left: 20),
               child: ListView.builder(
