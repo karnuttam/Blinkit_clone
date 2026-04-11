@@ -14,8 +14,8 @@ class _BottomNavScreenState extends State<Bottomnavscreen> {
   int currentIndex = 0;
   List<Widget> Pages = [
     HomeScreen(),
-    CategoryScreen(),
     CartScreen(),
+    CategoryScreen(),
     PrintScreen(),
   ];
 

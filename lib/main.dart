@@ -1,7 +1,9 @@
 import 'package:blinkit_clone_app/repository/screens/splash/splashscreen.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/rendering.dart';
 
 void main() {
+  //debugPaintSizeEnabled = true; // 👈 enable debug lines
   runApp(const MyApp());
 }
 
