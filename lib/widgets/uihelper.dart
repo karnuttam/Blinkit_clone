@@ -51,7 +51,7 @@ class UiHelper {
       child: TextField(
         controller: controller,
         decoration: InputDecoration(
-          hintText: "Search 'ice - cream'",
+          hintText: 'Search "ice-cream"',
           prefixIcon: Image.asset(
             "assets/images/search-interface-symbol 1.png",
           ),

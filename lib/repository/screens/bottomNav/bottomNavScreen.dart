@@ -28,21 +28,62 @@ class _BottomNavScreenState extends State<Bottomnavscreen> {
         //type: BottomNavigationBarType.shifting,
         items: [
           BottomNavigationBarItem(
-            icon: UiHelper.CustomImage(img: "home 1.png"),
+            icon: Container(
+              padding: EdgeInsets.only(top: 4),
+              decoration: currentIndex == 0
+                  ? BoxDecoration(
+                      border: Border(
+                        top: BorderSide(color: Colors.grey, width: 3),
+                      ),
+                    )
+                  : null,
+
+              child: UiHelper.CustomImage(img: "home 1.png"),
+            ),
             label: "Home",
             //backgroundColor: Colors.yellow,
           ),
           BottomNavigationBarItem(
-            icon: UiHelper.CustomImage(img: "shopping-bag 1.png"),
+            icon: Container(
+              padding: EdgeInsets.only(top: 4),
+              decoration: currentIndex == 1
+                  ? BoxDecoration(
+                      border: Border(
+                        top: BorderSide(color: Colors.grey, width: 3),
+                      ),
+                    )
+                  : null,
+              child: UiHelper.CustomImage(img: "shopping-bag 1.png"),
+            ),
             label: "Cart",
           ),
           BottomNavigationBarItem(
-            icon: UiHelper.CustomImage(img: "category 1.png"),
+            icon: Container(
+              padding: EdgeInsets.only(top: 4),
+              decoration: currentIndex == 2
+                  ? BoxDecoration(
+                      border: Border(
+                        top: BorderSide(color: Colors.grey, width: 3),
+                      ),
+                    )
+                  : null,
+              child: UiHelper.CustomImage(img: "category 1.png"),
+            ),
             label: "Category",
             // backgroundColor: Colors.green,
           ),
           BottomNavigationBarItem(
-            icon: UiHelper.CustomImage(img: "printer 1.png"),
+            icon: Container(
+              padding: EdgeInsets.only(top: 4),
+              decoration: currentIndex == 3
+                  ? BoxDecoration(
+                      border: Border(
+                        top: BorderSide(color: Colors.grey, width: 3),
+                      ),
+                    )
+                  : null,
+              child: UiHelper.CustomImage(img: "printer 1.png"),
+            ),
             label: "Print",
             // backgroundColor: Colors.teal,
           ),
