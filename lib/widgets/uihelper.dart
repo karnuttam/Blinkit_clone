@@ -11,6 +11,7 @@ class UiHelper {
     required FontWeight fontweight,
     String? fontfamily,
     required double fontsize,
+    double letterSpacing = 0.0,
   }) {
     return Text(
       text,
@@ -19,6 +20,7 @@ class UiHelper {
         fontFamily: fontfamily ?? "Poppins",
         fontWeight: fontweight,
         color: color,
+        letterSpacing: letterSpacing,
       ),
     );
   }
